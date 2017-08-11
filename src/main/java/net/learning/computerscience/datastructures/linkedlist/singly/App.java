@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.linkedlist.singlylinkedlist;
+package net.learning.computerscience.datastructures.linkedlist.singly;
 
 public class App {
 

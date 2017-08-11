@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.linkedlist.circularlinkedlist;
+package net.learning.computerscience.datastructures.linkedlist.circular;
 
 public class Node {
 
