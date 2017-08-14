@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.redblacktree;
+package net.learning.computerscience.datastructures.trees.redblacktree;
 
 public class Node<T> {
 

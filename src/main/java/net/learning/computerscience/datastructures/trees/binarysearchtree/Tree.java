@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.binarysearchtree;
+package net.learning.computerscience.datastructures.trees.binarysearchtree;
 
 public interface Tree<T> {
 

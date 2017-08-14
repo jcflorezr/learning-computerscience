@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.avltree;
+package net.learning.computerscience.datastructures.trees.avltree;
 
 public class Node<T> {
 

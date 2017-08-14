@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.avltree;
+package net.learning.computerscience.datastructures.trees.avltree;
 
 public class AvlTree<T extends Comparable<T>> implements Tree<T> {
 
