@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.tree.trie;
+package net.learning.computerscience.datastructures.tree.prefixtree;
 
 import java.util.ArrayList;
 import java.util.List;
