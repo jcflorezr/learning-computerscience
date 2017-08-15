@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.trees.binarysearchtree;
+package net.learning.computerscience.datastructures.tree.binarysearchtree;
 
 public class Person implements Comparable<Person> {
 

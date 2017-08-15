@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.trees.redblacktree;
+package net.learning.computerscience.datastructures.tree.redblacktree;
 
 public class RedBlackTree<T extends Comparable<T>> implements Tree<T> {
 

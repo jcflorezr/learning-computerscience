@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.trees.avltree;
+package net.learning.computerscience.datastructures.tree.avltree;
 
 public class App {
 

@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.trees.splaytree;
+package net.learning.computerscience.datastructures.tree.splaytree;
 
 public class SplayTree<T extends Comparable<T>> implements Tree<T> {
 
