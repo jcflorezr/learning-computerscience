@@ -1,4 +1,4 @@
-package net.learning.computerscience.algorithms.boyermoore;
+package net.learning.computerscience.algorithms.substringsearch.boyermoore;
 
 import java.util.HashMap;
 import java.util.Map;

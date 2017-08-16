@@ -1,4 +1,4 @@
-package net.learning.computerscience.algorithms.bruteforce;
+package net.learning.computerscience.algorithms.substringsearch.bruteforce;
 
 public class App {
 
