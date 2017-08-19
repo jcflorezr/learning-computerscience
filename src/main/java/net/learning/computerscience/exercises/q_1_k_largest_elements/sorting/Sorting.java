@@ -1,4 +1,4 @@
-package net.learning.computerscience.exercises.k_largest_elements.sorting;
+package net.learning.computerscience.exercises.q_1_k_largest_elements.sorting;
 
 import java.util.*;
 
