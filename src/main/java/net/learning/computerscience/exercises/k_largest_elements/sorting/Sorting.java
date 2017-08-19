@@ -2,6 +2,9 @@ package net.learning.computerscience.exercises.k_largest_elements.sorting;
 
 import java.util.*;
 
+/*
+    from: http://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
+ */
 public class Sorting {
 
     public static void main(String[] args) {
