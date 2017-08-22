@@ -74,9 +74,10 @@ public class SinglyLinkedList <T> {
     @Override
     public String toString() {
         String result = "[";
-        while (root != null) {
-            result += root.getData() + " -> ";
-            root = root.getNext();
+        Node<T> node = root;
+        while (node != null) {
+            result += node.getData() + " -> ";
+            node = node.getNext();
         }
         result += "null]";
         return result;
@@ -85,8 +86,8 @@ public class SinglyLinkedList <T> {
 
 class Node<T> {
 
-    private T data;
-    private Node<T> next;
+    T data;
+    Node<T> next;
 
     public Node(T data) {
         this.data = data;
@@ -106,5 +107,10 @@ class Node<T> {
 
     public void setNext(Node<T> next) {
         this.next = next;
+    }
+
+    @Override
+    public String toString() {
+        return this.data.toString();
     }
 }
