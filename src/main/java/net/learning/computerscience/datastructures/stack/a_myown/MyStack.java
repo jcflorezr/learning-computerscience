@@ -1,11 +1,11 @@
 package net.learning.computerscience.datastructures.stack.a_myown;
 
-public class MyQueue<T> {
+public class MyStack<T> {
 
     private Node<T> root;
     private int size;
 
-    public MyQueue() {
+    public MyStack() {
         root = null;
     }
 
