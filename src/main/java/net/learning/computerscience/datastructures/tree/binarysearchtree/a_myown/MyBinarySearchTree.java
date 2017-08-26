@@ -14,22 +14,19 @@ public class MyBinarySearchTree<T extends Comparable<T>> {
         } else {
             insert(root, data);
         }
-
     }
 
-    private void insert(Node<T> node, T data) {
-        if (node.getData().compareTo(data) < 0) {
-            if (node.getRightChild() == null) {
-                node.setRightChild(new Node<>(data));
+    private Node insert(Node<T> node, T data) {
+        if (node != null) {
+            if (data.compareTo(node.getData()) <= 0) {
+                node.setLeftChild(insert(node.getLeftChild(), data));
+                return node;
             } else {
-                insert(node.getRightChild(), data);
+                node.setRightChild(insert(node.getRightChild(), data));
+                return node;
             }
         } else {
-            if (node.getLeftChild() == null) {
-                node.setLeftChild(new Node<>(data));
-            } else {
-                insert(node.getLeftChild(), data);
-            }
+            return new Node<>(data);
         }
     }
 
