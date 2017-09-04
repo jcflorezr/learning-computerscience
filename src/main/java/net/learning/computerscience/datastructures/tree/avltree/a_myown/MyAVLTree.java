@@ -10,18 +10,18 @@ public class MyAVLTree<T extends Comparable<T>> {
         } else if (data != null) {
             insert(root, data);
         }
-        balance(root);
     }
 
     private Node<T> insert(Node<T> node, T data) {
         if (node != null) {
             if (data.compareTo(node.getData()) <= 0) {
                 node.setLeftNode(insert(node.getLeftNode(), data));
-                return node;
             } else {
                 node.setRightNode(insert(node.getRightNode(), data));
-                return node;
             }
+            node.setHeight();
+            balanceSubtree(node, data);
+            return node;
         } else {
             return new Node<>(data);
         }
@@ -76,13 +76,25 @@ public class MyAVLTree<T extends Comparable<T>> {
         return node;
     }
 
-    private void balance(Node<T> node) {
-        if (node.getLeftNode() != null) {
-            balance(node.getLeftNode());
+    private void balanceSubtree(Node<T> node, T data) {
+
+        int leftNodeHight = node.getLeftNode() == null ? -1 : node.getLeftNode().getHeight();
+        int rightNodeHeight = node.getRightNode() == null ? -1 : node.getRightNode().getHeight();
+
+        boolean leftSubtreeIsUnbalanced = leftNodeHight - rightNodeHeight > 1;
+        boolean rightSubtreeIsUnbalanced = leftNodeHight - rightNodeHeight < -1;
+
+        boolean isDataGreaterThanUnbalancedLeftSubtreeRoot = data.compareTo(node.getLeftNode().getData()) > 0;
+        boolean isDataLessThanUnbalancedLeftSubtreeRoot = data.compareTo(node.getLeftNode().getData()) < 0;
+
+        boolean isDataGreaterThanUnbalancedRightSubtreeRoot = data.compareTo(node.getRightNode().getData()) > 0;
+        boolean isDataLessThanUnbalancedRightSubtreeRoot = data.compareTo(node.getRightNode().getData()) < 0;
+
+
+        // This is the heavy right unbalanced case
+        if (rightSubtreeIsUnbalanced && isDataGreaterThanUnbalancedRightSubtreeRoot) {
+
         }
-        if (node.getRightNode() != null) {
-            balance(node.getRightNode());
-        }
-        node.getHeight();
+
     }
 }

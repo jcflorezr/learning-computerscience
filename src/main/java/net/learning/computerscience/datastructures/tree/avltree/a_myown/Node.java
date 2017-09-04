@@ -19,10 +19,13 @@ public class Node<T> {
         this.data = data;
     }
 
-    public int getHeight() {
+    public void setHeight() {
         int leftHeight = (this.leftNode == null) ? -1 : this.leftNode.getHeight();
         int rightHeight = (this.rightNode == null) ? -1 : this.rightNode.getHeight();
         height = Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    public int getHeight() {
         return height;
     }
 
