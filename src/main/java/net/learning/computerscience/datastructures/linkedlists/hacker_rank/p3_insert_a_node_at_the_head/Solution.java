@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p3_i
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem
+ */
 public class Solution {
 
     Node insert(Node head, int data) {

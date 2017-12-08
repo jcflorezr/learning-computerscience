@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p4_i
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem
+ */
 public class Solution {
 
     Node insertNth(Node head, int data, int position) {

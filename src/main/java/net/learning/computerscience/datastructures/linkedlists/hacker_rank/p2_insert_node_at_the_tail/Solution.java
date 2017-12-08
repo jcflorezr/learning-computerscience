@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p2_i
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem
+ */
 public class Solution {
 
     Node insert(Node node, int data) {

@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.arrays.hacker_rank.p1_arrays
 
 import java.util.Scanner;
 
+/**
+ * https://www.hackerrank.com/challenges/arrays-ds/problem
+ */
 public class Solution {
 
     public static void main(String[] args) {

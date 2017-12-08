@@ -3,6 +3,9 @@ package net.learning.computerscience.datastructures.arrays.hacker_rank.p3_dynami
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * https://www.hackerrank.com/challenges/dynamic-array/problem
+ */
 public class Solution {
 
     public static void main(String[] args) {

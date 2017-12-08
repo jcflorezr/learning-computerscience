@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p5_d
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem
+ */
 public class Solution {
 
     Node delete(Node head, int position) {

@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.arrays.hacker_rank.p4_left_r
 
 import java.util.Scanner;
 
+/**
+ * https://www.hackerrank.com/challenges/array-left-rotation/problem
+ */
 public class Solution {
 
     static int[] leftRotation(int[] a, int d) {

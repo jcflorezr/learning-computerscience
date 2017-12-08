@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p11_
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/delete-duplicate-value-nodes-from-a-sorted-linked-list/problem
+ */
 public class Solution {
     Node RemoveDuplicates(Node head) {
         if (head == null) return head;

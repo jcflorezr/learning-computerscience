@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p14_
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/insert-a-node-into-a-sorted-doubly-linked-list/problem
+ */
 public class Solution {
 
     Node SortedInsert(Node head, int data) {

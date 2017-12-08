@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p8_c
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/compare-two-linked-lists/problem
+ */
 public class Solution {
 
     int compareLists(Node headA, Node headB) {

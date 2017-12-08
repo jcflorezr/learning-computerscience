@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.arrays.hacker_rank.p6_array_
 
 import java.util.Scanner;
 
+/**
+ * https://www.hackerrank.com/challenges/crush/problem
+ */
 public class Solution {
 
     public static void main(String[] args) {

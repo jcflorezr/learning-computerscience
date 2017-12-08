@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p13_
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/find-the-merge-point-of-two-joined-linked-lists/problem
+ */
 public class Solution {
     int FindMergeNode(Node headA, Node headB) {
         Node intersec = null;

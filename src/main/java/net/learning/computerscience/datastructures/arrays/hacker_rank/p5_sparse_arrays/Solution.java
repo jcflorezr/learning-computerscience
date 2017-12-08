@@ -2,9 +2,13 @@ package net.learning.computerscience.datastructures.arrays.hacker_rank.p5_sparse
 
 import java.util.Scanner;
 
+/**
+ * https://www.hackerrank.com/challenges/sparse-arrays/problem
+ */
 public class Solution {
 
     public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
         String[] strings = new String[n];

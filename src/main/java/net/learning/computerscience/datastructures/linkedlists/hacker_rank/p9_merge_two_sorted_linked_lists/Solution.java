@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p9_m
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem
+ */
 public class Solution {
 
     Node mergeLists(Node a, Node b) {

@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.arrays.hacker_rank.p2_2d_arr
 
 import java.util.Scanner;
 
+/**
+ * https://www.hackerrank.com/challenges/2d-array/problem
+ */
 public class Solution {
 
     /* 1. Tried to implement backtracking ommiting the center value (2nd row - 2nd col),

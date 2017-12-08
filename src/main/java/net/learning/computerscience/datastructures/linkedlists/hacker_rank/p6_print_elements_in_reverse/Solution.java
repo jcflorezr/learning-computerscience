@@ -2,6 +2,9 @@ package net.learning.computerscience.datastructures.linkedlists.hacker_rank.p6_p
 
 import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 
+/**
+ * https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list-in-reverse/problem
+ */
 public class Solution {
 
     void reversePrint(Node head) {
