@@ -3,7 +3,7 @@ package net.learning.computerscience.exercises.q_4_product_array_puzzle;
 /**
  * from: http://www.geeksforgeeks.org/a-product-array-puzzle/
  *
- * Given an array arr[] of n integers, construct a Product Array prod[] (of same size)
+ * Given an arrays arr[] of n integers, construct a Product Array prod[] (of same size)
  * such that prod[i] is equal to the product of all the elements of arr[] except arr[i].
  * Solve it without division operator and in O(n).
  * Example:
@@ -16,7 +16,7 @@ public class ProductArrayPuzzle {
     public static void main(String[] args) {
         int arr[] = {10, 3, 5, 6, 2};
         int n = arr.length;
-        System.out.println("The product array is : ");
+        System.out.println("The product arrays is : ");
         productArray(arr, n);
     }
 

@@ -31,7 +31,7 @@ public class UnionAndIntersection {
         }
 
       /* Print remaining elements of
-         the larger array */
+         the larger arrays */
         while(i < m)
             System.out.print(arr1[i++]+" ");
         while(j < n)

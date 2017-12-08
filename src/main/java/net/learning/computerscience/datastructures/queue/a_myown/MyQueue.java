@@ -1,7 +1,5 @@
 package net.learning.computerscience.datastructures.queue.a_myown;
 
-import net.learning.computerscience.datastructures.tree.avltree.Node;
-
 public class MyQueue<T> {
 
     Node<T> root;
