@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.arrays.geeks_for_geeks.p10_find_multiple_left_rotations;
+package net.learning.computerscience.datastructures.arrays.geeks_for_geeks.set1_rotations.p10_find_multiple_left_rotations;
 
 import java.util.Arrays;
 

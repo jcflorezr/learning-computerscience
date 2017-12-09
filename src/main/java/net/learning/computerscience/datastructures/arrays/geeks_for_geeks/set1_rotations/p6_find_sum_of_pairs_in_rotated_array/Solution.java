@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.arrays.geeks_for_geeks.p6_find_sum_of_pairs_in_rotated_array;
+package net.learning.computerscience.datastructures.arrays.geeks_for_geeks.set1_rotations.p6_find_sum_of_pairs_in_rotated_array;
 
 /**
  * http://www.geeksforgeeks.org/given-a-sorted-and-rotated-array-find-if-there-is-a-pair-with-a-given-sum/

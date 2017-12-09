@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.arrays.geeks_for_geeks.p11_find_minimum_in_sorted_and_rotated_array;
+package net.learning.computerscience.datastructures.arrays.geeks_for_geeks.set1_rotations.p11_find_minimum_in_sorted_and_rotated_array;
 
 /**
  * http://www.geeksforgeeks.org/find-minimum-element-in-a-sorted-and-rotated-array/
