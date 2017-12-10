@@ -18,8 +18,8 @@ public class Solution {
     }
 
     /**
-     * min index = 0
-     * max index = n - 1
+     * min minIndex = 0
+     * max maxIndex = n - 1
      * max maxElement = arr[n - 1] + 1
      */
     static int[] rearrangeArray(int[] arr, int maxElement, int idx, int minIdx, int maxIdx) {
