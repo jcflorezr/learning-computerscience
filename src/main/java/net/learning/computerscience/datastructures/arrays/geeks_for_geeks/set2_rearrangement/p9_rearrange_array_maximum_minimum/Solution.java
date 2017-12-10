@@ -28,7 +28,7 @@ public class Solution {
             arr[idx] += (arr[maxIdx] % maxElement) * maxElement;
             return rearrangeArray(arr, maxElement, idx + 1, minIdx, maxIdx - 1);
         } else {
-            arr[idx] += (arrm[inIdx] % maxElement) * maxElement;
+            arr[idx] += (arr[minIdx] % maxElement) * maxElement;
             return rearrangeArray(arr, maxElement, idx + 1, minIdx + 1, maxIdx);
         }
     }
