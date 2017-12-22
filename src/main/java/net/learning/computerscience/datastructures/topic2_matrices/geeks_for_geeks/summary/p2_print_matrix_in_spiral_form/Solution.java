@@ -9,25 +9,67 @@ public class Solution {
         int mat[][] = {{1,  2,  3,  4,  5,  6},
                        {7,  8,  9,  10, 11, 12},
                        {13, 14, 15, 16, 17, 18}};
-        int rowStart = 0;
-        int rowEnd = mat.length;
-        int colStart = 0;
-        int colEnd = mat[0].length;
-        Node spiral = spiralForm(mat, 1, rowStart, rowEnd, colStart, colEnd);
+        print(mat);
+        mat = new int[][]
+                 {{9, 5, 8, 3, 4, 3},
+                  {6, 1, 1, 1, 1, 1},
+                  {5, 5, 6, 8, 2, 7},
+                  {3, 1, 0, 4, 2, 0},
+                  {8, 1, 2, 3, 9, 8},
+                  {9, 2, 5, 7, 8, 9}};
+        print(mat);
+        mat = new int[][]
+                {{9, 5, 8, 3, 4, 3},
+                 {9, 2, 5, 7, 8, 9}};
+        print(mat);
+    }
 
+    private static void print(int[][] mat) {
+        int rowStart = 0;
+        int rowEnd = mat.length - 1;
+        int colStart = 0;
+        int colEnd = mat[0].length - 1;
+        Node spiral = spiralForm(mat, 1, rowStart, rowEnd, colStart, colEnd);
+        while (spiral != null) {
+            System.out.print(spiral.data + " -> ");
+            spiral = spiral.next;
+        }
+        System.out.println();
     }
 
     private static Node spiralForm(int[][] mat, int currCase, int rowStart, int rowEnd, int colStart, int colEnd) {
-        return
-    }
-
-    private static Node spiralForm2(int[][] mat, int currCase, int rowStart, int rowEnd, int colStart, int colEnd, Node node) {
-        if ((currCase % 2 == 0 && rowStart > rowEnd) || (currCase % 2 != 0 && colStart > colEnd)) return null;
+        if (rowStart > rowEnd || colStart > colEnd) return null;
+        Node nextSetOfNodes = null;
         switch (currCase) {
             case 1:
-                spiralForm(mat, 2, ++rowStart, rowEnd, colStart, --colEnd)
+                nextSetOfNodes = spiralForm(mat, 2, rowStart + 1, rowEnd, colStart, colEnd);
+                break;
+            case 2:
+                nextSetOfNodes = spiralForm(mat, 3, rowStart, rowEnd, colStart, colEnd - 1);
+                break;
+            case 3:
+                nextSetOfNodes = spiralForm(mat, 4, rowStart, rowEnd - 1, colStart, colEnd);
+                break;
+            case 4:
+                nextSetOfNodes = spiralForm(mat, 1, rowStart, rowEnd, colStart + 1, colEnd);
+                break;
         }
-        return null;
+        return mergeWithNextSetOfNodes(mat, currCase, rowStart, rowEnd, colStart, colEnd, null, nextSetOfNodes);
+    }
+
+    private static Node mergeWithNextSetOfNodes(int[][] mat, int currCase, int rowStart, int rowEnd, int colStart, int colEnd, Node currentSetOfNodes, Node nextSetOfNodes) {
+        currentSetOfNodes = new Node();
+        if (currCase % 2 == 0) {
+            currentSetOfNodes.data = (currCase == 2) ? mat[rowStart++][colEnd] : mat[rowEnd--][colStart];
+        } else {
+            currentSetOfNodes.data = (currCase == 1) ? mat[rowStart][colStart++] : mat[rowEnd][colEnd--];
+        }
+        if (rowStart > rowEnd || colStart > colEnd) {
+            currentSetOfNodes.next = nextSetOfNodes;
+        } else {
+            currentSetOfNodes.next = mergeWithNextSetOfNodes(mat, currCase, rowStart, rowEnd, colStart, colEnd, currentSetOfNodes.next, nextSetOfNodes);
+        }
+        return currentSetOfNodes;
     }
 
 }
