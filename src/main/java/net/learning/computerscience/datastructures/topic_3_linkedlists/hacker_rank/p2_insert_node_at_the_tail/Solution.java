@@ -1,6 +1,6 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p2_insert_node_at_the_tail;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
+import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**
  * https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem

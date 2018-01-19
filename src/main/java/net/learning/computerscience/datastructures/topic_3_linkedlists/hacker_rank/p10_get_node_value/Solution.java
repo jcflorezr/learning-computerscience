@@ -1,6 +1,6 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p10_get_node_value;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
+import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**
  * https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail/problem

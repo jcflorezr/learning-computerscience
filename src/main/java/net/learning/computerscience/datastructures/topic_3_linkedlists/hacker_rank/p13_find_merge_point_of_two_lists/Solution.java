@@ -1,6 +1,5 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p13_find_merge_point_of_two_lists;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**

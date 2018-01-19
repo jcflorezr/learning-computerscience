@@ -1,6 +1,5 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p11_remove_duplicates_from_sorted_list;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**

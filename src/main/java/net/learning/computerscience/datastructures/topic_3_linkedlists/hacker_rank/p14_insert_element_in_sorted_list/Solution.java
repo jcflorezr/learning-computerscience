@@ -1,6 +1,5 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p14_insert_element_in_sorted_list;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**

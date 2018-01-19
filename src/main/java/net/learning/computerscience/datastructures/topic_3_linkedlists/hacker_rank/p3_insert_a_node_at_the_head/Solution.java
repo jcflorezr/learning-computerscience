@@ -1,6 +1,6 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p3_insert_a_node_at_the_head;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
+import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**
  * https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem

@@ -1,6 +1,6 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p12_cycle_detection;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
+import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 import java.util.HashSet;
 import java.util.Set;

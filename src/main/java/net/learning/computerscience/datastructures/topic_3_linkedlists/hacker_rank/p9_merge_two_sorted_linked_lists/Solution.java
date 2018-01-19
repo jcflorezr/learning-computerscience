@@ -1,6 +1,5 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p9_merge_two_sorted_linked_lists;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**

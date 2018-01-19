@@ -1,6 +1,5 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p4_insert_a_node_at_specific_pos;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
 import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**

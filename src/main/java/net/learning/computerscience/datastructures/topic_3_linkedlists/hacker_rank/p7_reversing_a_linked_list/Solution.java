@@ -1,6 +1,6 @@
 package net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.p7_reversing_a_linked_list;
 
-import net.learning.computerscience.datastructures.linkedlists.hacker_rank.Node;
+import net.learning.computerscience.datastructures.topic_3_linkedlists.hacker_rank.Node;
 
 /**
  * https://www.hackerrank.com/challenges/reverse-a-linked-list
