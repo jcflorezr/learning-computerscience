@@ -8,6 +8,16 @@ public class Solution {
     public static void main(String[] args) {
         CustomLinkedList list = new CustomLinkedList(new int[]{10,8,4,2});
         System.out.println(list.getListPrinted());
+        list.head = reverseList(list.head, null);
+        System.out.println(list.getListPrinted());
+    }
+
+    private static Node reverseList(Node current, Node previous) {
+        if (current == null) return previous;
+        Node temp = current.next;
+        current.next = current.previous;
+        current.previous = temp;
+        return reverseList(temp, current);
     }
 
 }
@@ -39,9 +49,10 @@ class CustomLinkedList {
 
     public String getListPrinted() {
         String l = "";
-        while (head != null) {
-            l += head.data + " <-> ";
-            head = head.next;
+        Node temp = head;
+        while (temp != null) {
+            l += temp.data + " <-> ";
+            temp = temp.next;
         }
         return l;
     }
