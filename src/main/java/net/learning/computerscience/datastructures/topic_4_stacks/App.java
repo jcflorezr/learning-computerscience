@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.stack;
+package net.learning.computerscience.datastructures.topic_4_stacks;
 
 public class App {
 

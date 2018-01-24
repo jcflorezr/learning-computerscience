@@ -32,7 +32,7 @@ public class SinglyLinkedList <T> {
         }
     }
 
-    // O(1). As stack (LIFO)
+    // O(1). As topic_4_stacks (LIFO)
     public void remove() {
         if (root != null) {
             root = root.getNext();

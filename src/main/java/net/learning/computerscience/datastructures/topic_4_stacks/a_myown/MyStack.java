@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.stack.a_myown;
+package net.learning.computerscience.datastructures.topic_4_stacks.a_myown;
 
 public class MyStack<T> {
 
