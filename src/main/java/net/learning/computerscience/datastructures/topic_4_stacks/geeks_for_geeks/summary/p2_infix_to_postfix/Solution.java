@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.topic_4_stacks.geeks_for_geeks.p2_infix_to_postfix;
+package net.learning.computerscience.datastructures.topic_4_stacks.geeks_for_geeks.summary.p2_infix_to_postfix;
 
 import java.util.ArrayList;
 import java.util.HashMap;
