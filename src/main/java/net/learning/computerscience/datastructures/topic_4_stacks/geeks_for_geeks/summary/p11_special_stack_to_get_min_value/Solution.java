@@ -14,6 +14,17 @@ public class Solution {
         while (!stack.isEmpty()) {
             System.out.println(stack.getMin());
         }
+
+        ints = new int[] {30,20,10};
+        stack = new CustomStack();
+        for (int i = ints.length - 1; i >= 0; i--) {
+            stack.push(ints[i]);
+        }
+        System.out.println(stack.getMin());
+        stack.push(5);
+        while (!stack.isEmpty()) {
+            System.out.println(stack.getMin());
+        }
     }
 
 }
@@ -68,7 +79,7 @@ class CustomStack {
         if (isEmpty()) return null;
         Node head = pop();
         Node auxHead = auxiliarStack.pop();
-        return (head.data == auxHead.data) ? head : auxHead;
+        return (head.data == auxHead.data) ? head : getMin();
     }
 
     public boolean isEmpty() {
