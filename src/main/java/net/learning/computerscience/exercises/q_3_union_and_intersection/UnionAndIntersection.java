@@ -3,7 +3,7 @@ package net.learning.computerscience.exercises.q_3_union_and_intersection;
 /**
  * from: http://www.geeksforgeeks.org/union-and-intersection-of-two-sorted-arrays-2/
  *
- * Given two sorted topic1_arrays, find their union and intersection.
+ * Given two sorted topic_1_arrays, find their union and intersection.
  * Example:Input:
  * arr1[] = {1, 3, 4, 5, 7}
  * arr2[] = {2, 3, 5, 6}
@@ -31,7 +31,7 @@ public class UnionAndIntersection {
         }
 
       /* Print remaining elements of
-         the larger topic1_arrays */
+         the larger topic_1_arrays */
         while(i < m)
             System.out.print(arr1[i++]+" ");
         while(j < n)

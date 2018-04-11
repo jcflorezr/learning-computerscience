@@ -5,10 +5,10 @@ import java.util.Arrays;
 /**
  * from: http://www.geeksforgeeks.org/maximum-difference-between-two-elements/
  *
- * Given an topic1_arrays arr[] of integers, find out the difference between any two elements
+ * Given an topic_1_arrays arr[] of integers, find out the difference between any two elements
  * such that larger element appears after the smaller number in arr[].
- * Examples: If topic1_arrays is [2, 3, 10, 6, 4, 8, 1] then returned value should be 8 (Diff between 10 and 2).
- * If topic1_arrays is [ 7, 9, 5, 6, 3, 2 ] then returned value should be 2 (Diff between 7 and 9)
+ * Examples: If topic_1_arrays is [2, 3, 10, 6, 4, 8, 1] then returned value should be 8 (Diff between 10 and 2).
+ * If topic_1_arrays is [ 7, 9, 5, 6, 3, 2 ] then returned value should be 2 (Diff between 7 and 9)
  */
 public class Difference {
 
