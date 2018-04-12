@@ -15,6 +15,10 @@ public class Solution {
                 .insertNode(new Node(8))
                 .insertNode(new Node(5));
         System.out.println();
+        binaryTree.insertNode(new Node(0));
+        System.out.println();
+        binaryTree.insertNode(new Node(-1));
+        System.out.println();
     }
 
 }
@@ -33,22 +37,23 @@ class BinaryTree {
     }
 
     private int insertNode(Node newNode, Node currentNode) {
+        int currentHeight;
         if (newNode.data < currentNode.data) {
             if (currentNode.leftChild == null) {
                 currentNode.leftChild = newNode;
-                return newNode.height;
+                currentHeight = newNode.height;
             } else {
-                currentNode.height = Math.max(insertNode(newNode, currentNode.leftChild),
-                                              currentNode.rightChild != null ? currentNode.rightChild.height : 0) + 1;
+                currentHeight = insertNode(newNode, currentNode.leftChild);
             }
+            currentNode.height = Math.max(currentHeight, currentNode.rightChild != null ? currentNode.rightChild.height : 0) + 1;
         } else if (newNode.data > currentNode.data) {
             if (currentNode.rightChild == null) {
                 currentNode.rightChild = newNode;
-                return newNode.height;
+                currentHeight = newNode.height;
             } else {
-                currentNode.height = Math.max(insertNode(newNode, currentNode.rightChild),
-                                              currentNode.leftChild != null ? currentNode.leftChild.height : 0) + 1;
+                currentHeight = insertNode(newNode, currentNode.rightChild);
             }
+            currentNode.height = Math.max(currentHeight, currentNode.leftChild != null ? currentNode.leftChild.height : 0) + 1;
         }
         return currentNode.height;
     }
