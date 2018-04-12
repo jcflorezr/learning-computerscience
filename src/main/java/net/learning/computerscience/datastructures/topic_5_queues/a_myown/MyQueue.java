@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.topic_5_queue.a_myown;
+package net.learning.computerscience.datastructures.topic_5_queues.a_myown;
 
 public class MyQueue<T> {
 

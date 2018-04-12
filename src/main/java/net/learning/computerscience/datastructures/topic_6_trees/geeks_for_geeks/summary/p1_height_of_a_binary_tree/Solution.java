@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.topic_6_trees.geeks_for_geeks.p1_height_of_a_binary_tree;
+package net.learning.computerscience.datastructures.topic_6_trees.geeks_for_geeks.summary.p1_height_of_a_binary_tree;
 
 public class Solution {
 

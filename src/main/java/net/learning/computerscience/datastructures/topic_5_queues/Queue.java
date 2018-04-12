@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.topic_5_queue;
+package net.learning.computerscience.datastructures.topic_5_queues;
 
 public class Queue {
 

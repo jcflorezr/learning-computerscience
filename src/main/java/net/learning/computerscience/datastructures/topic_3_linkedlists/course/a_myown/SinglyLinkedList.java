@@ -39,7 +39,7 @@ public class SinglyLinkedList <T> {
         }
     }
 
-    // O(n). As topic_5_queue (FIFO)
+    // O(n). As topic_5_queues (FIFO)
     public void removeAtLast() {
         if (root != null) {
             Node<T> currentNode = root;
