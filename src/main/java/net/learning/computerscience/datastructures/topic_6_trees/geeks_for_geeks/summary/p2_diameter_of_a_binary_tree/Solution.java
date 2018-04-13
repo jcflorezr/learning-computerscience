@@ -1,5 +1,8 @@
 package net.learning.computerscience.datastructures.topic_6_trees.geeks_for_geeks.summary.p2_diameter_of_a_binary_tree;
 
+/**
+ * https://www.geeksforgeeks.org/diameter-of-a-binary-tree/
+ */
 public class Solution {
 
     public static void main(String[] args) {
