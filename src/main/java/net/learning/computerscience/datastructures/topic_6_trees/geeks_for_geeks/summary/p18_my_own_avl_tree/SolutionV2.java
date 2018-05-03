@@ -40,19 +40,19 @@ class AVLTree {
         if (newNode.data <= currentNode.data) {
             if (currentNode.leftChild == null) {
                 currentNode.leftChild = newNode;
-                return newNode.getHeight();
+                currentNode.leftChildHeight = newNode.getHeight();
             } else {
                 currentNode.leftChildHeight = insertNode(newNode, currentNode.leftChild);
-                return currentNode.leftChildHeight;
             }
+            return currentNode.getHeight();
         } else {
             if (currentNode.rightChild == null) {
                 currentNode.rightChild = newNode;
-                return newNode.getHeight();
+                currentNode.rightChildHeight = newNode.getHeight();
             } else {
                 currentNode.rightChildHeight = insertNode(newNode, currentNode.rightChild);
-                return currentNode.rightChildHeight;
             }
+            return currentNode.getHeight();
         }
     }
 }
