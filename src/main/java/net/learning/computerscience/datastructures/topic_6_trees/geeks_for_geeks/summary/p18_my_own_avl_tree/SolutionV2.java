@@ -55,4 +55,31 @@ class AVLTree {
             return currentNode.getHeight();
         }
     }
+
+    public boolean deleteNode(int data) {
+        AugmentedNode nodeToBeDeleted = getNodeToBeDeleted(root, data);
+        if (nodeToBeDeleted == null) return false;
+        int numOfChildren = checkNumOfChildren(nodeToBeDeleted);
+        switch (numOfChildren) {
+            case 0:
+                return deleteLeafNode(nodeToBeDeleted);
+        }
+        return false;
+    }
+
+    private boolean deleteLeafNode(AugmentedNode nodeToBeDeleted) {
+
+        return false;
+    }
+
+    private int checkNumOfChildren(AugmentedNode nodeToBeDeleted) {
+        return (nodeToBeDeleted.leftChild == null ? 0 : 1) + (nodeToBeDeleted.rightChild == null ? 0 : 1);
+    }
+
+    private AugmentedNode getNodeToBeDeleted(AugmentedNode currentNode, int data) {
+        if (currentNode == null) return null;
+        if (currentNode.data == data) return currentNode;
+        if (data < currentNode.data) return getNodeToBeDeleted(currentNode.leftChild, data);
+        else return getNodeToBeDeleted(currentNode.rightChild, data);
+    }
 }
