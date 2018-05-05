@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.topic_6_trees.geeks_for_geeks.summary.p_17_constructing_tree_from_in_order_and_pre_order;
+package net.learning.computerscience.datastructures.topic_6_trees.geeks_for_geeks.summary.p17_constructing_tree_from_in_order_and_pre_order;
 
 import java.util.ArrayDeque;
 
