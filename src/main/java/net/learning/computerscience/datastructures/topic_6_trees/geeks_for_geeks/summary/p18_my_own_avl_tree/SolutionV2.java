@@ -56,30 +56,34 @@ class AVLTree {
         }
     }
 
-    public boolean deleteNode(int data) {
-        AugmentedNode nodeToBeDeleted = getNodeToBeDeleted(root, data);
-        if (nodeToBeDeleted == null) return false;
-        int numOfChildren = checkNumOfChildren(nodeToBeDeleted);
-        switch (numOfChildren) {
-            case 0:
-                return deleteLeafNode(nodeToBeDeleted);
+    public void deleteNode(int data) {
+        deleteNode(root, data);
+    }
+
+    private AugmentedNode deleteNode(AugmentedNode currentNode, int data) {
+        if (data < currentNode.data) {
+            currentNode.leftChild = deleteNode(currentNode.leftChild, data);
+        } else if (data > currentNode.data) {
+            currentNode.rightChild = deleteNode(currentNode.rightChild, data);
+        } else {
+            if (currentNode.leftChild == null && currentNode.rightChild == null) {
+                currentNode = null;
+                return currentNode;
+            } else if (currentNode.leftChild == null) {
+                return currentNode.rightChild;
+            } else if (currentNode.rightChild == null) {
+                return currentNode.leftChild;
+            } else {
+                AugmentedNode predecessor = getPredecessor(currentNode.leftChild);
+                currentNode.data = predecessor.data;
+                currentNode.leftChild = deleteNode(currentNode.leftChild, predecessor.data);
+                return currentNode;
+            }
         }
-        return false;
+        return currentNode;
     }
 
-    private boolean deleteLeafNode(AugmentedNode nodeToBeDeleted) {
-
-        return false;
-    }
-
-    private int checkNumOfChildren(AugmentedNode nodeToBeDeleted) {
-        return (nodeToBeDeleted.leftChild == null ? 0 : 1) + (nodeToBeDeleted.rightChild == null ? 0 : 1);
-    }
-
-    private AugmentedNode getNodeToBeDeleted(AugmentedNode currentNode, int data) {
-        if (currentNode == null) return null;
-        if (currentNode.data == data) return currentNode;
-        if (data < currentNode.data) return getNodeToBeDeleted(currentNode.leftChild, data);
-        else return getNodeToBeDeleted(currentNode.rightChild, data);
+    private AugmentedNode getPredecessor(AugmentedNode currentNode) {
+        return (currentNode.rightChild == null) ? currentNode : getPredecessor(currentNode.rightChild);
     }
 }
