@@ -21,7 +21,7 @@ public class Solution {
     private static void generateDepths(TreeNode current, List<Integer> depths, int currentDepth) {
         if (current == null) return;
         if (isLeafNode.test(current)) {
-            depths.add(currentDepth + 1);
+            depths.add(currentDepth);
         } else {
             generateDepths(current.left, depths, currentDepth + 1);
             generateDepths(current.right, depths, currentDepth + 1);
