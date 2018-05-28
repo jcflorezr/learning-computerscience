@@ -2,6 +2,8 @@ package net.learning.computerscience.datastructures.topic_6_trees.ideserve.p19_t
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
@@ -26,7 +28,7 @@ public class SolutionTest {
         n3.left = n6;
         n3.right = n7;
 
-        assertThat(Solution.getTopView(n1), is(equalTo(new int[] {4,2,1,3,7})));
+        assertThat(Solution.getTopView(n1), is(equalTo(Arrays.asList(4,2,1,3,7))));
 
     }
 
@@ -56,7 +58,37 @@ public class SolutionTest {
         n6.right = n10;
         n7.right = n11;
 
-        assertThat(Solution.getTopView(n1), is(equalTo(new int[] {4,2,1,3,7,11})));
+        assertThat(Solution.getTopView(n1), is(equalTo(Arrays.asList(4,2,1,3,7,11))));
+
+    }
+
+    @Test
+    public void getTopView3() {
+
+        TreeNode n1 = new TreeNode(1);
+        TreeNode n2 = new TreeNode(2);
+        TreeNode n3 = new TreeNode(3);
+        TreeNode n4 = new TreeNode(4);
+        TreeNode n5 = new TreeNode(5);
+        TreeNode n6 = new TreeNode(6);
+        TreeNode n7 = new TreeNode(7);
+        TreeNode n8 = new TreeNode(8);
+        TreeNode n9 = new TreeNode(9);
+        TreeNode n10 = new TreeNode(10);
+
+        n1.left = n2;
+        n1.right = n3;
+        n2.left = n4;
+        n2.right = n5;
+        n3.left = n6;
+        n5.left = n7;
+        n4.right = n8;
+        n6.right = n9;
+        n8.right = n10;
+
+
+
+        assertThat(Solution.getTopView(n1), is(equalTo(Arrays.asList(4,2,1,3))));
 
     }
 
