@@ -2,16 +2,30 @@ package net.learning.computerscience.datastructures.topic_6_trees.ideserve.p23_r
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 public class SolutionTest {
 
     @Test
     public void removeNodesOfASpecificRange() {
-
         TreeNode treeNode = newBST(new int[]{8, 5, 11, 2, 7, 9, 12, 6, 10, 13});
-        System.out.println();
+        assertThat(Solution.removeNodesOfASpecificRange(treeNode, 3, 9), is(equalTo(Arrays.asList(2,10,11,12,13))));
+    }
 
+    @Test
+    public void removeNodesOfASpecificRange2() {
+        TreeNode treeNode = newBST(new int[]{8, 5, 11, 2, 7, 9, 12, 6, 10, 13});
+        assertThat(Solution.removeNodesOfASpecificRange(treeNode, 9, 13), is(equalTo(Arrays.asList(2,5,6,7,8))));
+    }
+
+    @Test
+    public void removeNodesOfASpecificRange3() {
+        TreeNode treeNode = newBST(new int[]{8, 3, 9, 2, 6, 5, 7, 4});
+        assertThat(Solution.removeNodesOfASpecificRange(treeNode, 2, 6), is(equalTo(Arrays.asList(7,8,9))));
     }
 
     private TreeNode newBST(int[] elements) {
