@@ -10,10 +10,6 @@ import static org.junit.Assert.*;
 
 public class SolutionTest {
 
-    // WARNING: AVL BALANCING NOT CORRECTLY IMPLEMENTED
-
-
-
     @Test
     public void getMaxElements() {
         int[] inputArray = {4,2,12,34,23,35,44,55};

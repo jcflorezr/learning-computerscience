@@ -7,10 +7,6 @@ import java.util.ArrayList;
  */
 public class Solution {
 
-
-    // WARNING: AVL BALANCING NOT CORRECTLY IMPLEMENTED
-
-
     public static ArrayList<Integer> getMaxElements(int[] inputArray, int k) {
         ArrayList<Integer> elements = new ArrayList<>();
         TreeNode node;
@@ -25,12 +21,9 @@ public class Solution {
         TreeNode newTree = null;
         for (int element : subArray) {
             newTree = insertNode(newTree, element);
+            newTree = balanceIfNeeded(newTree);
         }
-        return balanceIfNeeded(newTree);
-    }
-
-    private static TreeNode getPredecessor(TreeNode node) {
-        return node.right == null ? node : getPredecessor(node.right);
+        return newTree;
     }
 
     private static TreeNode insertNode(TreeNode node, int element) {
