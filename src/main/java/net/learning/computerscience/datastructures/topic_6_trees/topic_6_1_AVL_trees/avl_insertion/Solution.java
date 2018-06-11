@@ -6,6 +6,7 @@ import java.util.List;
 /**
  * https://www.hackerrank.com/challenges/self-balancing-tree/problem
  * https://www.ideserve.co.in/learn/avl-tree-insertion
+ * https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
  */
 public class Solution {
 
