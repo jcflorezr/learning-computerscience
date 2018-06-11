@@ -47,25 +47,15 @@ public class Solution {
             if (current.left.left != null) {
                 return rightRotate(current);
             } else {
-                TreeNode temp = current.left;
-                TreeNode temp2 = temp.right;
-                temp2.right = current;
-                current.left = null;
-                current.height = 1;
-                temp2.height = 2;
-                return leftRotate(temp);
+                current.left = leftRotate(current.left);
+                return rightRotate(current);
             }
         } else {
             if (current.right.right != null) {
                 return leftRotate(current);
             } else {
-                TreeNode temp = current.right;
-                TreeNode temp2 = temp.left;
-                temp2.left = current;
-                current.right = null;
-                current.height = 1;
-                temp2.height = 2;
-                return rightRotate(temp);
+                current.right = rightRotate(current.right);
+                return leftRotate(current);
             }
         }
     }
