@@ -25,13 +25,11 @@ public class Solution {
     private static TreeNode deleteNode(TreeNode current, int element) {
         if (current == null) return null;
         if (current.data == element) {
-            current = deleteNode(current);
-            return current != null ? checkBalance(current) : current;
+            return deleteNode(current);
         }
         current.left = deleteNode(current.left, element);
         current.right = deleteNode(current.right, element);
-        current.height = Math.max(getHeight(current.left), getHeight(current.right)) + 1;
-        return current;
+        return checkBalance(current);
     }
 
     private static TreeNode deleteNode(TreeNode current) {
@@ -40,7 +38,7 @@ public class Solution {
         } else if (current.left != null && current.right != null) {
             TreeNode predecessor = getPredecessor(current.left);
             current.data = predecessor.data;
-            current.left = deleteNode(predecessor, predecessor.data);
+            current.left = deleteNode(current.left, predecessor.data);
             return current;
         } else {
             return current.left != null ? current.left : current.right;
