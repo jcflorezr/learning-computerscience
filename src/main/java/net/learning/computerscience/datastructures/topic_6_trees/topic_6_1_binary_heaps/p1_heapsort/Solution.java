@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.topic_6_trees.topic_7_binary_heaps.p1_heapsort;
+package net.learning.computerscience.datastructures.topic_6_trees.topic_6_1_binary_heaps.p1_heapsort;
 
 /**
  * https://www.geeksforgeeks.org/heap-sort/
