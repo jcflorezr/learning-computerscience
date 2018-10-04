@@ -10,6 +10,11 @@ public class AVLTree<T extends Comparable<T>> {
         else root = insert(root, newNode);
     }
 
+    public void delete(T element) {
+        root = delete(root, element);
+        balance(root);
+    }
+
     private Node<T> insert(Node<T> currentNode, Node<T> newNode) {
         if (currentNode == null) return newNode;
         if (currentNode.element.compareTo(newNode.element) > 0) {
@@ -18,6 +23,24 @@ public class AVLTree<T extends Comparable<T>> {
             currentNode.right = insert(currentNode.right, newNode);
         }
         return balance(currentNode);
+    }
+
+    private Node<T> delete(Node<T> currentNode, T element) {
+        if (currentNode == null) return null;
+        if (currentNode.element.compareTo(element) > 0) {
+            currentNode.left = delete(currentNode.left, element);
+        } else if (currentNode.element.compareTo(element) < 0) {
+            currentNode.right = delete(currentNode.right, element);
+        } else {
+            if (currentNode.left == null && currentNode.right == null) {
+                return null;
+            } else if (currentNode.left != null && currentNode.right != null) {
+                return getSuccessor(currentNode.right, currentNode);
+            } else {
+                return currentNode.left != null ? currentNode.left : currentNode.right;
+            }
+        }
+        return currentNode;
     }
 
     private Node<T> balance(Node<T> currentNode) {
@@ -66,6 +89,14 @@ public class AVLTree<T extends Comparable<T>> {
         return currentTemp;
     }
 
+    private Node<T> getSuccessor(Node<T> currentNode, Node<T> parentNode) {
+        if (currentNode.left == null) {
+            delete(parentNode, currentNode.element);
+            parentNode. element = currentNode.element;
+            return parentNode;
+        }
+        return getSuccessor(currentNode.left, parentNode);
+    }
 
 }
 
