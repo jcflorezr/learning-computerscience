@@ -1,6 +1,6 @@
 package net.learning.computerscience.datastructures.topic_6_trees.topic_6_1_AVL_trees.avl_insertion;
 
-public class AVLTree<T extends Comparable<T>> {
+public class CompleteAVLTree1<T extends Comparable<T>> {
 
     Node<T> root;
 

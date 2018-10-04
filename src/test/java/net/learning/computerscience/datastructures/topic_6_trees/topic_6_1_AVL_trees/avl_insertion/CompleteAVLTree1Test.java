@@ -10,11 +10,11 @@ import java.util.Queue;
 
 import static org.junit.Assert.*;
 
-public class AVLTreeTest {
+public class CompleteAVLTree1Test {
 
     @Test
     public void insertion() {
-        AVLTree<Integer> avlTree = new AVLTree<>();
+        CompleteAVLTree1<Integer> avlTree = new CompleteAVLTree1<>();
         int[] elements = {6,7,2,0,3,1,5,9,4,8,10};
         for (int element : elements) {
             avlTree.insert(element);
