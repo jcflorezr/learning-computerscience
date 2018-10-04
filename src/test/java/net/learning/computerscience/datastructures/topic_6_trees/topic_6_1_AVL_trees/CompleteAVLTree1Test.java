@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.topic_6_trees.topic_6_1_AVL_trees.avl_insertion;
+package net.learning.computerscience.datastructures.topic_6_trees.topic_6_1_AVL_trees;
 
 import org.junit.Test;
 
@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
 public class CompleteAVLTree1Test {
 
     @Test
-    public void insertion() {
+    public void testAVLTree() {
         CompleteAVLTree1<Integer> avlTree = new CompleteAVLTree1<>();
         int[] elements = {6,7,2,0,3,1,5,9,4,8,10};
         for (int element : elements) {

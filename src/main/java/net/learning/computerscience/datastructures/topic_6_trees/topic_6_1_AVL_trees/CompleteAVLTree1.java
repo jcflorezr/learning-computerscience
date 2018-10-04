@@ -1,4 +1,4 @@
-package net.learning.computerscience.datastructures.topic_6_trees.topic_6_1_AVL_trees.avl_insertion;
+package net.learning.computerscience.datastructures.topic_6_trees.topic_6_1_AVL_trees;
 
 public class CompleteAVLTree1<T extends Comparable<T>> {
 
