@@ -20,6 +20,15 @@ public class CompleteHashTable1Test {
         hashTable.put("Andres", 31);
         hashTable.put("Juana", 30);
 
+        hashTable.put("1Juan", 29);
+        hashTable.put("1Maria", 30);
+        hashTable.put("1Pedro", 31);
+        hashTable.put("1Juan", 30);
+        hashTable.put("1Pablo", 29);
+        hashTable.put("1Mario", 30);
+        hashTable.put("1Andres", 31);
+        hashTable.put("1Juana", 30);
+
         assertEquals(new Integer(30), hashTable.get("Juan"));
         assertEquals(new Integer(30), hashTable.get("Juana"));
         assertEquals(new Integer(29), hashTable.get("Pablo"));
@@ -27,5 +36,13 @@ public class CompleteHashTable1Test {
         assertEquals(new Integer(30), hashTable.get("Maria"));
         assertEquals(new Integer(31), hashTable.get("Andres"));
         assertNull(hashTable.get("MArio"));
+
+        assertEquals(new Integer(30), hashTable.get("1Juan"));
+        assertEquals(new Integer(30), hashTable.get("1Juana"));
+        assertEquals(new Integer(29), hashTable.get("1Pablo"));
+        assertEquals(new Integer(31), hashTable.get("1Pedro"));
+        assertEquals(new Integer(30), hashTable.get("1Maria"));
+        assertEquals(new Integer(31), hashTable.get("1Andres"));
+        assertNull(hashTable.get("2Mario"));
     }
 }
