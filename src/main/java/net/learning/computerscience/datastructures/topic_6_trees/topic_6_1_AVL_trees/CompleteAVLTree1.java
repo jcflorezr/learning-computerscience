@@ -12,7 +12,6 @@ public class CompleteAVLTree1<T extends Comparable<T>> {
 
     public void delete(T element) {
         root = delete(root, element);
-        balance(root);
     }
 
     private Node<T> insert(Node<T> currentNode, Node<T> newNode) {
@@ -40,7 +39,7 @@ public class CompleteAVLTree1<T extends Comparable<T>> {
                 return currentNode.left != null ? currentNode.left : currentNode.right;
             }
         }
-        return currentNode;
+        return balance(currentNode);
     }
 
     private Node<T> balance(Node<T> currentNode) {

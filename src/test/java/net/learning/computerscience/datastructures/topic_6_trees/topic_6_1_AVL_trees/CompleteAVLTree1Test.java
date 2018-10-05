@@ -30,6 +30,12 @@ public class CompleteAVLTree1Test {
         avlTree.delete(200);
         levelOrderElements = levelOrderTraversal(avlTree.root);
         assertEquals(Arrays.asList(6,3,9,0,4,7,10,1,5), levelOrderElements);
+        avlTree.delete(1);
+        levelOrderElements = levelOrderTraversal(avlTree.root);
+        assertEquals(Arrays.asList(6,3,9,0,4,7,10,5), levelOrderElements);
+        avlTree.delete(0);
+        levelOrderElements = levelOrderTraversal(avlTree.root);
+        assertEquals(Arrays.asList(6,4,9,3,5,7,10), levelOrderElements);
     }
 
     private <T extends Comparable<T>> List<T> levelOrderTraversal(Node<T> current) {
