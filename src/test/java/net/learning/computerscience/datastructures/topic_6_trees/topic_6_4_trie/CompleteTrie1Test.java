@@ -26,5 +26,9 @@ public class CompleteTrie1Test {
         assertFalse(trie.searchWord("airplane"));
         assertFalse(trie.searchWord("airbags"));
 
+        assertFalse(trie.searchWord("air"));
+        trie.insert("air");
+        assertTrue(trie.searchWord("air"));
+
     }
 }
